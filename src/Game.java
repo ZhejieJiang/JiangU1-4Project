@@ -19,7 +19,7 @@ public class Game {
 
     //Dice roll to show how much the players move that round.
     public int Dice(){
-        return (int)(Math.random()*4);
+        return (int)(Math.random()*3 + 1);
     }
 
     //Go to college (lose $500 in the beginning but after round 5, you make $200 more than what you would make)
@@ -28,29 +28,30 @@ public class Game {
     }
 
 
+
     public void beginGame(){
-        int round = 0;
+        int round = 1;
+        int p1step = 0;
+        int p2step = 0;
+        while ( (round < 10) || ((p1step > 20) && (p2step > 20)) ){
+           System.out.println(round);
+           if(p1step < 20){
+               int p1DiceRoll = Dice();
+               p1step += p1DiceRoll;
 
-        while (round<10 || (p1step >20 && p2step>20)){
-
-
-
-
+           }
+            if(p2step < 20){
+                int p2DiceRoll = Dice();
+                p2step += p2DiceRoll;
+            }
 
 
             round++;
         }
+        if(p1money > p2money){System.out.println("Player 1 has won the game");}
+        if(p1money < p2money){System.out.println("Player 2 has won the game");}
+        if(p1money == p2money){System.out.println("The game is a tie");}
     }
-
-
-
-
-
-
-
-
-
-
 
 
 

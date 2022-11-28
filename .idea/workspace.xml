@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69298a05-16a9-40f6-8cd6-a73ba8c637fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+    <list default="true" id="69298a05-16a9-40f6-8cd6-a73ba8c637fa" name="Changes" comment="adding attributes, methods and etc.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +49,14 @@
       <option name="presentableId" value="Default" />
       <updated>1669208963997</updated>
     </task>
+    <task id="LOCAL-00001" summary="adding attributes, methods and etc.">
+      <created>1669641876509</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669641876509</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -61,5 +69,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding attributes, methods and etc." />
+    <option name="LAST_COMMIT_MESSAGE" value="adding attributes, methods and etc." />
   </component>
 </project>
