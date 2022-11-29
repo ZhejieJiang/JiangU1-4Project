@@ -2,25 +2,22 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[]args){
         Scanner scan = new Scanner(System.in);
-        System.out.print("How much money do you want to start with? (500 is the normal amount)");
+        System.out.print("Would you like to go to college (yes or no) ");
+        String choice = scan.nextLine();
+        System.out.print("How much money do you want to start with? (500 is the normal amount) ");
+        int amount = scan.nextInt();
 
 
-        //Fix this
-        if (scan.nextInt() == 500){
-            Game GameOfLife = new Game();}
-        Game GameOfLife = new Game(scan.nextInt());
-
-
-        //College?
-        System.out.print("Would you like to go to college (yes or no)");
-        if(scan.nextLine().equals("yes")){
-            GameOfLife.College(true);}
+        Game GameOfLife = new Game(amount);
+        if(choice.equals("yes")){
+            GameOfLife.College(true);
+            System.out.println("Since you chose to go to college you will lose $500, but get an extra $100 after step 5");
+        }
         else{
             GameOfLife.College(false);}
 
         //Start Game
         GameOfLife.beginGame();
-
 
 
 
