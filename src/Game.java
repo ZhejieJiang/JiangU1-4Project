@@ -28,6 +28,11 @@ public class Game {
         p1money -= 500;
     }
 
+    public void redspace(){
+        if(p1step%5 -1 == 0){
+        System.out.println("you have stepped on to a red space, you lost $500");
+        }
+    }
 
     public void beginGame(){
         int round = 1;
