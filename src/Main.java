@@ -18,14 +18,19 @@ public class Main {
         int amount = scan.nextInt();
 
         //Makes the game
+        if (amount == 500){
+            Game GameOfLife = new Game();
+        }
         Game GameOfLife = new Game(amount);
+
+
 
         //Checks if Player 1 can go to college
         if (choice1.equals("yes") && amount >= 500) {
             GameOfLife.p1College(true);
             System.out.println("Since you chose to go to college you will lose $500, but get an extra $100 after step 5");}
         else if (choice1.equals("yes") && amount < 500) {
-            System.out.println("You can't go to college, you don't have enough money to.");
+            System.out.println("You can't go to college, you don't have enough money to. " + GameOfLife);
             GameOfLife.p1College(false);}
         else{
             GameOfLife.p1College(false);}
@@ -35,7 +40,7 @@ public class Main {
             GameOfLife.p2College(true);
             System.out.println("Since you chose to go to college you will lose $500, but get an extra $100 after step 5");}
         else if (choice2.equals("yes") && amount < 500) {
-            System.out.println("You can't go to college, you don't have enough money to.");
+            System.out.println("You can't go to college, you don't have enough money to. " + GameOfLife);
             GameOfLife.p2College(false);}
         else{
             GameOfLife.p2College(false);}

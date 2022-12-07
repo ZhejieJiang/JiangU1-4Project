@@ -13,7 +13,6 @@ public class Game {
     private int p1step;
     /** what step is player 2 on */
     private int p2step;
-    /* private String winner; */
 
     /** default constructor that sets beginning money to $500 */
     public Game(){
@@ -30,7 +29,10 @@ public class Game {
     }
 
 
-    /** Dice roll to show how much the players move that round. */
+    /** Dice roll to show how much the players move that round.
+    @return int - random between 1,2,3
+    */
+
     public int Dice(){
         return (int)(Math.random()*3 + 1);
     }
@@ -53,23 +55,29 @@ public class Game {
             p2money -= 500;
         }
     }
-    /** detects if player 1 stepped on a red space */
+    /** detects if player 1 stepped on a red space
+    @return boolean - true if p1 stepped on 4, 9, 14, 19
+   */
     public boolean p1RedSpace(){
         return p1step % 5 == 4;
     }
 
-    /** detects if player 2 stepped on a red space */
+    /** detects if player 2 stepped on a red space
+     @return boolean - true if p2 stepped on 4, 9, 14, 19
+     */
     public boolean p2RedSpace(){
         return p2step % 5 == 4;
     }
 
 
-    /*
+    /** tells starting amount
+    @return String saying you only have the starting amount
+     */
     public String toString(){
-        if(p1money < p2money){return "The game is" + " a tie";}
-        else{return "Player " + winner + " has won the game";}
+        String returnString = "You only have " + p1money;
+        return returnString;
     }
-    */
+
 
     /** the game */
     public void beginGame(){
